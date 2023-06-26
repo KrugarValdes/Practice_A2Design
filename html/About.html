@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GitSearch|About</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/image/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/image/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/image/icon/favicon-16x16.png">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="manifest" href="/image/icon/site.webmanifest"> 
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+  </head>
+
+<body>
+    <nav class="navbar navbar-expand-lg  ">
+        <div class="container-md">
+          <a class="navbar-brand" href="/index.html">
+            <img class="roundimage me-1" style="width: 3rem;" src="/image/tijoe-тиджойидет.gif" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active me-1" aria-current="page" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item me-1">
+                <a class="nav-link active" aria-current="page" href="https://github.com/KrugarValdes" target="_blank">MyGit</a>
+              </li>
+              <li class="nav-item me-1">
+                <a class="nav-link active"aria-current="page" href="html/About.html">About</a>
+                
+              </li>
+            </ul>
+           </div>
+        </div>
+      </nav> 
+
+    
+      
+    <h3 class="text-center my-3 ">About GitHub Search</h1>
+
+    <div id="app"></div>
+
+    <script src="/js/main.js"type='module' ></script>
+
+
+<div class="container-f  " style='margin-bottom: 90px;'>
+
+  <p>Введите логин или имя пользователя GitHub, которого вы хотите найти, и вам будут представлены результаты, соответствующие введенной строке. Для поиска пользователей используется GitHub Search API.  Приложение после поиска выводит, первую найденную десятку пользователей GitHub.
+    Некоторые предлагаемые поисковые запросы:
+      <ul>
+          <li>Ввод собственного логина(Например, мой - KrugarValdes),</li>
+          <li>Ввод имени человека(Например, Bill Gates),</li>
+          <li>Ввод разных слов для проверки приложения.</li>
+          
+      </ul>
+      В стороку поиска можно писать прописными буквами, на результат это не повлияет.
+  </p>
+
+  <h4 class="text-muted">Поиск</h2>
+  <p>Введите любой текст для поиска пользователй GitHub. Поиск начнется сразу же после ввода данных, результатом будет вывод 10 пользователе(Аватар, логин, ссылка на профиль GitHub) с самым похожим логином и именем указанным в профиле.
+  </p>
+  <p> Если поиск не возвращает ожидаемых результатов или вообще не дает результатов, подумайте о том, чтобы переписать запрос.
+  </p>
+  <p >При обработке ввода в приложении используется функция debounce, для снижения количество запросов. Приложение адаптировано для экранов разного разрешения.
+  </p>
+</div>
+    <div class="footbar">
+        <div class="container">
+            <div class="row">
+            
+              <div class="footbar">
+                <div class="container">
+                    <div class="row">
+                    
+                      <footer class="footer full-width">
+                       <p class="mtop">
+                         <small>GitHub Search is proudly made in Omsk, Russia by <a href="https://github.com/KrugarValdes" target="_blank">Smirnov Vitaly</a></small>
+                       </p>
+                    </footer>
+                  </div>
+                </div>
+              </div>
+</html>
